@@ -10,7 +10,8 @@
 	</head>
 	<body ng-app="japApp" ng-controller="MenuCtrl">
 		<div id="menuBlock">
-			<div ng-class="{ active: activeLink('what') }" ng-click="goToPage('what')">Compr&eacute;hension</a></div>
+			<div ng-class="{ active: activeLink('yomu') }" ng-click="goToPage('yomu')">Lecture</div>
+			<div ng-class="{ active: activeLink('wakaru') }" ng-click="goToPage('wakaru')">Compr&eacute;hension</div>
 		</div>
 		<div class="bigAssContainer">
 			<div id="contentBlock" ng-view=""></div>
@@ -28,10 +29,8 @@
 	    <script src="../../../jap/bower_components/momentjs/lang/fr.js"></script>
 
 	    <script type="text/javascript" src="../../../jap/app/scripts/app.js"></script>
-	    <script type="text/javascript" src="../../../jap/app/scripts/what.js"></script>
-	    <script type="text/javascript" src="../../../jap/app/scripts/news.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/wakaru.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/yomu.js"></script>
 	    <script type="text/javascript" src="../../../jap/app/scripts/menu.js"></script>
-	    <script type="text/javascript" src="../../../jap/app/scripts/fanfrale.js"></script>
-	    <script type="text/javascript" src="../../../jap/app/scripts/contact.js"></script>
 	</body>
 </html>

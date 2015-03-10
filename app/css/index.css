@@ -37,6 +37,10 @@ ul {
 	list-style-type: none;
 }
 
+#menuBlock div {
+	cursor: pointer;
+}
+
 .container {
 	width: 70%;
 	margin: auto;

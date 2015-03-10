@@ -2,7 +2,6 @@
 
 angular.module('controllers')
 	.controller('MenuCtrl', ['$scope', '$http', '$routeParams', '$location', function ($scope, $http, $routeParams, $location) {
-
 		$scope.activeLink = function(linkName) {
 			return $location.path() == '/' + linkName;
 		};
