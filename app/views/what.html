@@ -3,6 +3,8 @@
 	<div class="content-text">
 		<h3>Lecture à voix haute</h3>
 
+		<h4>「お元気ですか？」</h4>
+
 		<p><span class="speaker">シルビー：</span>先生、おはようございます。</p>
 		<p><span class="speaker">先生：</span>ああ、シルビーさん、おはよう。</p>
 		<p><span class="speaker">シルビー：</span>お元気ですか？</p>
@@ -19,32 +21,51 @@
 		<h4>「今日は何を買いましたか？」</h4>
 
 		<p><span class="speaker">中川：</span>山田さん、今日は何をしましたか？</p>
-		<p><span class="speaker">山田：</span>今日は、買い物をしました。</p>
+		<p><span class="speaker">山田：</span>今日は、買いものをしました。</p>
 		<p><span class="speaker">中川：</span>そうですか？何を買いましたか？</p>
-		<p><span class="speaker">山田：</span>鉛筆と本が買いました。それから、食べ物を買いました。</p>
+		<p><span class="speaker">山田：</span>えんぴつと本を買いました。それから、食べものを買いました。</p>
 		<p><span class="speaker">中川：</span>ああ、くだものとやさいを買いましたか？</p>
-		<p><span class="speaker">山田：</span>いいえ、にくとさかなを買いました。</p>
+		<p><span class="speaker">山田：</span>いいえ、にくとさかなを買いました。中川さんは、やさいを買いましたか？</p>
+		<p><span class="speaker">中川：</span>はい、買いました。やさいが好きですよ！</p>
 	</div>
 
 	<div class="content-question">
 		<h3>Questions</h3>
-		<p>1. 山田さんはやさいを買いました。　(はい｜いいえ)</p>
-		<p>2. 日本の子どもはよく勉強しますか？</p>
+		<p>1. 山田さんは何を買いましたか？
+			<div>
+				<span class="list">やさい</span>
+				<span class="list">えんぴつ</span>
+				<span class="list">ふく</span>
+				<span class="list">くだもの</span>
+				<span class="list">くるま</span>
+				<span class="list">のみもの</span>
+				<span class="list">ほん</span>
+			</div>
+		</p>
+		<p>2. 中川さんは何が好きですか？</p>
 	</div>
 
 	<div class="help-options">
-		<div class="help-button" ng-click="colourKanji = !colourKanji">Montrer la liste de vocabulaire</div>
+		<div class="help-button" ng-click="vocabList1 = !vocabList1">{{ (vocabList1 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+		<div class="vocab" ng-show="vocabList1">
+			<p>買う : acheter</p>
+			<p>買いもの : shopping</p>
+			<p>それから : ensuite, et après</p>
+			<p>えんぴつ : crayon</p>
+			<p>...が好きです : j'aime ...</p>
+		</div>
 	</div>
 </div>
 
 <div class="container">
+	<h1>Exercice 3</h1>
 	<div class="content-text">
 		<h3>Dialogue</h3>
 
 		<h4>「明日はどこに行きますか？」</h4>
 
 		<p><span class="speaker">中川：</span>山田さん、明日はどこに行きますか？</p>
-		<p><span class="speaker">山田：</span>明日は、ホテルに行きます。</p>
+		<p><span class="speaker">山田：</span>明日は、東京に行きます。</p>
 		<p><span class="speaker">中川：</span>そうですか？どこに行きますか？</p>
 		<p><span class="speaker">山田：</span>デパートに行きました。</p>
 	</div>
