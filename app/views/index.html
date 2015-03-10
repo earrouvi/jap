@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Exercices de japonais</title>
+	    <link rel="stylesheet" type="text/css" href="../../../jap/app/css/index.css" />
+	    <link href='http://fonts.googleapis.com/css?family=Aclonica:400' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Lemon:400' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="http://css-spinners.com/css/spinner/whirly.css" type="text/css">
+	</head>
+	<body ng-app="japApp" ng-controller="MenuCtrl">
+		<div id="menuBlock">
+			<div ng-class="{ active: activeLink('what') }" ng-click="goToPage('what')">Exercice 1</a></div>
+		</div>
+		<div class="bigAssContainer">
+			<div id="contentBlock" ng-view=""></div>
+			<div id="photosBlock">
+				<img src="../../../jap/app/images/photo{{num}}.png" ng-repeat="num in randArray" />
+			</div>
+		</div>
+		
+		<script src="../../../jap/bower_components/jquery/dist/jquery.js"></script>
+	    <script src="../../../jap/bower_components/angular/angular.js"></script>
+	    <script src="../../../jap/bower_components/angular-route/angular-route.js"></script>
+	    <script src="../../../jap/bower_components/momentjs/moment.js"></script>
+	    <script src="../../../jap/bower_components/underscore/underscore.js"></script>
+
+	    <script src="../../../jap/bower_components/momentjs/lang/fr.js"></script>
+
+	    <script type="text/javascript" src="../../../jap/app/scripts/app.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/what.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/news.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/menu.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/fanfrale.js"></script>
+	    <script type="text/javascript" src="../../../jap/app/scripts/contact.js"></script>
+	</body>
+</html>
