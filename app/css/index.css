@@ -5,44 +5,77 @@ body {
 	background-image: url(../images/background.png);
 	color: #03042b;
 	text-align: justify;
+	font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lemon', Arial, sans-serif;
 }
 
 h1 {
-	font-family: 'Lemon', Arial, sans-serif;
 	color: #ff8072;
 	font-size: 2.4em;
 }
 
-h2, h3, h4, h5 {
-	font-family: 'Lemon', Arial, sans-serif;
+h3 {
+	border-bottom: 1px solid #088da5;
 	color: #088da5;
+	padding: 4px 0 8px;
+}
+
+h5 {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #ff8072;
 }
 
 a {
 	color: #088da5;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .container {
-	padding-left: 24px;
+	width: 70%;
+	margin: auto;
 }
 
-h3 {
-	border-bottom: 1px solid #088da5;
-	color: #088da5;
+.help-options {
+	font-size: 1em;
 }
 
-.content-text {
-	width: 800px;
-}
-
-.content-question {
+.help-button {
+	color: #fbfaf1;
+	background-color: #ff8072;
+	border-radius: 4px;
+	padding: 4px 12px;
 	display: inline-block;
+	cursor: pointer;
+}
+
+.help-button:hover {
+	background-color: #e57366;
 }
 
 .speaker {
 	font-weight: bold;
 }
 
-.blue {
+.kanji {
+	cursor: pointer;
+	position: relative;
 	color: #088da5;
+}
+
+.kanji:hover {
+	font-weight: bold;
+}
+
+.furigana {
+	margin: 0 4px;
+	padding: 1px 6px;
+	border-radius: 4px;
+	border: 1px solid #03042b;
+	background-color: #e1e1d8;
 }
