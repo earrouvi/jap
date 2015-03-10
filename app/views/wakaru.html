@@ -1,9 +1,7 @@
 <div class="container">
-	<h1>Exercice 1</h1>
+	<h1>買い物</h1>
 	<div class="content-text">
-		<h3>Compréhension</h3>
-
-		<h4>「今日は何を買いましたか？」</h4>
+		<h3>「今日は何を買いましたか？」</h3>
 
 		<p><span class="speaker">中川：</span>山田さん、今日は何をしましたか？</p>
 		<p><span class="speaker">山田：</span>今日は、買いものをしました。</p>
@@ -12,6 +10,17 @@
 		<p><span class="speaker">中川：</span>ああ、くだものとやさいを買いましたか？</p>
 		<p><span class="speaker">山田：</span>いいえ、にくとさかなを買いました。中川さんは、やさいを買いましたか？</p>
 		<p><span class="speaker">中川：</span>はい、買いました。やさいが好きですよ！</p>
+
+		<div class="help-options">
+			<div class="help-button" ng-click="vocabList1 = !vocabList1">{{ (vocabList1 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="vocab" ng-show="vocabList1">
+				<p>買う : acheter</p>
+				<p>買いもの : shopping</p>
+				<p>それから : ensuite, et après</p>
+				<p>えんぴつ : crayon</p>
+				<p>...が好きです : j'aime ...</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="content-question">
@@ -29,25 +38,50 @@
 		</p>
 		<p>2. 中川さんは何が好きですか？</p>
 	</div>
+</div>
 
-	<div class="help-options">
-		<div class="help-button" ng-click="vocabList1 = !vocabList1">{{ (vocabList1 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
-		<div class="vocab" ng-show="vocabList1">
-			<p>買う : acheter</p>
-			<p>買いもの : shopping</p>
-			<p>それから : ensuite, et après</p>
-			<p>えんぴつ : crayon</p>
-			<p>...が好きです : j'aime ...</p>
+<div class="container">
+	<h1>お酒</h1>
+	<div class="content-text">
+		<h3>「日本人とお酒」</h3>
+
+		<p>日本人はよくお酒を飲む。アメリカでは２１才にならないとお酒が飲まない。日本でも同じじゃない。日本では２０才になったらお酒を飲んでもいい。でも、たいてい大学に入ると飲み始める。１７才か１８才で飲み始めるんだ。</p>
+
+		<div class="help-options">
+			<div class="help-button" ng-click="vocabList2 = !vocabList2">{{ (vocabList2 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="vocab" ng-show="vocabList2">
+				<p>お酒（おさけ） : sake</p>
+				<p>~才（さい） : âgé de ~</p>
+				<p>同じ（おなじ） : même, pareil</p>
+				<p>たいてい : en général</p>
+				<p>始める（はじめる） : commencer</p>
+			</div>
 		</div>
+	</div>
+
+	<div class="content-question">
+		<h3>Vocabulaire</h3>
+		<p>1. Donne la pronociation et la signification des mots suivants :</p>
+		<div>
+			<span class="list">日本人</span>
+			<span class="list">飲む</span>
+			<span class="list">大学</span>
+			<span class="list">入る</span>
+		</div>
+
+		<h3>Compréhension</h3>
+		<p>2. アメリカでは20才にならないとお酒が飲まあない。</p>
+		<p>3. 日本でもアメリカでもお酒が飲める年令は同じですか。</p>
+		<p>4. 日本人は少ないお酒を飲みますか？</p>
+		<h3>Expression</h3>
+		<p>5.　あなたが飲み始めたのはいくつの時ですか？</p>
 	</div>
 </div>
 
 <div class="container">
-	<h1>Exercice 2</h1>
+	<h1>行く</h1>
 	<div class="content-text">
-		<h3>Compréhension</h3>
-
-		<h4>「明日はどこに行きますか？」</h4>
+		<h3>「明日はどこに行きますか？」</h3>
 
 		<p><span class="speaker">中川：</span>山田さん、明日はどこに行きますか？</p>
 		<p><span class="speaker">山田：</span>明日は、東京に行きます。</p>
@@ -57,31 +91,8 @@
 
 	<div class="content-question">
 		<h3>Questions</h3>
-		<p>1. 何人が話していますか？</p>
-		<p>2. 日本の子どもはよく勉強しますか？</p>
-	</div>
-
-	<div class="help-options">
-		<div class="help-button" ng-click="colourKanji = !colourKanji">Montrer la liste de vocabulaire</div>
-	</div>
-</div>
-
-<div class="container">
-	<h1>Exercice 3</h1>
-	<div class="content-text">
-		<h3>Compréhension</h3>
-
-		<h4>「日本の子どもはよく勉強しますね」</h4>
-
-		<p><span class="speaker">シルビー：</span>日本では小さい子どももよく勉強するそうですが、本当ですか？</p>
-		<p><span class="speaker">田中：</span>小さい子どももよく勉強するのは本当です。シルビーさんは毎日何時間ぐらい勉強しますか？</p>
-		<p><span class="speaker">シルビー：</span>毎日、3時間ぐらい勉強しますよ。</p>
-	</div>
-
-	<div class="content-question">
-		<h3>Questions</h3>
-		<p>1. 何人が話していますか？</p>
-		<p>2. 日本の子どもはよく勉強しますか？</p>
+		<p>1. ？</p>
+		<p>2. ？</p>
 	</div>
 
 	<div class="help-options">

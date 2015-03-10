@@ -1,8 +1,6 @@
 <div class="container">
-	<h1>Exercice 1</h1>
+	<h1>元気</h1>
 	<div class="content-text">
-		<h3>Lecture</h3>
-
 		<h3>「お元気ですか？」</h3>
 
 		<p><span class="speaker">シルビー：</span>先生、おはようございます。</p>
@@ -10,5 +8,48 @@
 		<p><span class="speaker">シルビー：</span>お元気ですか？</p>
 		<p><span class="speaker">先生：</span>ええ、元気です。シルビーさんは？</p>
 		<p><span class="speaker">シルビー：</span>はい、元気です。</p>
+	</div>
+</div>
+
+<div class="container">
+	<h1>Lecture</h1>
+	<div class="content-text">
+		<h3>「日曜日」</h3>
+
+		<div>
+			<p>昨日は　日曜日で、とても　いい天気でした。　そして、 ショッピングセンターで　買い物をしました。ショッピングセンターは　東京で　一番　大きいデパートです。　その店で　コーヒーなどを　買いました。</p>
+			<p>それから、レストランへ　行きました。 そこで、すしを食べました。</p>
+		</div>
+
+		<div class="help-options">
+			<div class="help-button" ng-click="vocabList2 = !vocabList2">{{ (vocabList2 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="vocab" ng-show="vocabList2">
+				<p>昨日（きのう） : hier</p>
+				<p>天気（てんき） : le temps qu'il fait</p>
+				<p>一番（いちばん） : le numéro 1</p>
+				<p>店（みせ） : magasin</p>
+				<p>など : entre autres</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h1>Lecture</h1>
+	<div class="content-text">
+		<h3>「大学」</h3>
+
+		<div>
+			<p>ここは　大学の　門です。　大学の　<span class="unknown">門</span>は　あたらしいです。この　高いたてものは　としょかんです。　としょかんも　あたらしいです。その　たてものは　えつらん室です。　あの　たてものは　大学の　ゲストハウスです。</p>
+			<p>学生は　あさは　教室に　います。　ごごは　えつらん室に　います。よるは　りょうに　います。　大学には　にわが　あります。　にわには　池が　あります。　池の　中には　きれいな　金魚が　います。</p>
+		</div>
+
+		<div class="help-options">
+			<div class="help-button" ng-click="vocabList2 = !vocabList2">{{ (vocabList2 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="vocab" ng-show="vocabList2">
+				<p>門（かど） : porte</p>
+				<p>たてもの : bâtiment</p>
+			</div>
+		</div>
 	</div>
 </div>
