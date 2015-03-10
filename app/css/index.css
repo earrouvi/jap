@@ -39,6 +39,16 @@ ul {
 
 #menuBlock div {
 	cursor: pointer;
+	color: #fbfaf1;
+	background-color: #088da5;
+	border-radius: 4px;
+	padding: 4px 16px;
+	margin: 0;
+	display: inline-block;
+}
+
+#menuBlock .active {
+	background-color: #ff8072;
 }
 
 .container {
@@ -67,7 +77,7 @@ ul {
 	background-color: #e57366;
 }
 
-.speaker {
+.speaker, .tatoeba {
 	font-weight: bold;
 }
 
@@ -98,4 +108,8 @@ ul {
 	padding: 4px 8px;
 	margin: 8px 0;
 	width: 320px;
+}
+
+.example {
+	color: #999;
 }

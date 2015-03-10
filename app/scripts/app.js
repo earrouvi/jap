@@ -17,6 +17,9 @@ angular.module('japApp', [
 	    }).when('/yomu', {
 	        templateUrl: '../../../jap/app/views/yomu.html',
 	        controller: 'YomuCtrl'
+	    }).when('/kaku', {
+	        templateUrl: '../../../jap/app/views/kaku.html',
+	        controller: 'KakuCtrl'
 	    }).otherwise({
 	      	redirectTo: '/'
 	    });
