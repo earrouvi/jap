@@ -20,6 +20,9 @@ angular.module('japApp', [
 	    }).when('/kaku', {
 	        templateUrl: '../../../jap/app/views/kaku.html',
 	        controller: 'KakuCtrl'
+	    }).when('/kanji', {
+	        templateUrl: '../../../jap/app/views/kanji.html',
+	        controller: 'KanjiCtrl'
 	    }).otherwise({
 	      	redirectTo: '/'
 	    });

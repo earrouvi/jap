@@ -12,7 +12,7 @@
 		<p><span class="speaker">中川：</span>はい、買いました。やさいが好きですよ！</p>
 
 		<div class="help-options">
-			<div class="help-button" ng-click="vocabList1 = !vocabList1">{{ (vocabList1 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="help-button button" ng-click="vocabList1 = !vocabList1">{{ (vocabList1 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
 			<div class="vocab" ng-show="vocabList1">
 				<p>買う : acheter</p>
 				<p>買いもの : shopping</p>
@@ -26,15 +26,10 @@
 	<div class="content-question">
 		<h3>Questions</h3>
 		<p>1. 山田さんは何を買いましたか？
-			<div>
-				<span class="list">やさい</span>
-				<span class="list">えんぴつ</span>
-				<span class="list">ふく</span>
-				<span class="list">くだもの</span>
-				<span class="list">くるま</span>
-				<span class="list">のみもの</span>
-				<span class="list">ほん</span>
+			<div class="kotae-list">
+				<span class="kotae" ng-repeat="kot in kotae1" ng-class="{ active: kot.active }" ng-click="kot.active = !kot.active">{{ kot.name }}</span>
 			</div>
+			<div class="answer-button button" ng-click="answer()">Valider mes réponses</div>
 		</p>
 		<p>2. 中川さんは何が好きですか？</p>
 	</div>
@@ -48,7 +43,7 @@
 		<p>日本人はよくお酒を飲む。アメリカでは２１才にならないとお酒が飲まない。日本でも同じじゃない。日本では２０才になったらお酒を飲んでもいい。でも、たいてい大学に入ると飲み始める。１７才か１８才で飲み始めるんだ。</p>
 
 		<div class="help-options">
-			<div class="help-button" ng-click="vocabList2 = !vocabList2">{{ (vocabList2 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
+			<div class="help-button button" ng-click="vocabList2 = !vocabList2">{{ (vocabList2 ? 'Cacher' : 'Montrer') + ' la liste de vocabulaire' }}</div>
 			<div class="vocab" ng-show="vocabList2">
 				<p>お酒（おさけ） : sake</p>
 				<p>~才（さい） : âgé de ~</p>
@@ -96,7 +91,7 @@
 	</div>
 
 	<div class="help-options">
-		<div class="help-button" ng-click="colourKanji = !colourKanji">Montrer la liste de vocabulaire</div>
+		<div class="help-button button" ng-click="colourKanji = !colourKanji">Montrer la liste de vocabulaire</div>
 	</div>
 </div>
 
@@ -105,7 +100,7 @@
 
 	<div class="content-text">
 		<div class="help-options">
-			<div class="help-button" ng-click="colourKanji = !colourKanji">Colorer les kanji, katakana et hiragana</div>
+			<div class="help-button button" ng-click="colourKanji = !colourKanji">Colorer les kanji, katakana et hiragana</div>
 		</div>
 
 		<h3>Dialogue</h3>

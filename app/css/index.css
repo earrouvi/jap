@@ -3,7 +3,7 @@ body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	background-color: #fbfaf1;
 	background-image: url(../images/background.png);
-	color: #03042b;
+	color: #1c1c49;
 	text-align: justify;
 	font-size: 1.3em;
 }
@@ -64,40 +64,71 @@ ul {
 	font-size: 1em;
 }
 
-.help-button {
+.button {
 	color: #fbfaf1;
-	background-color: #ff8072;
 	border-radius: 4px;
 	padding: 4px 12px;
 	display: inline-block;
 	cursor: pointer;
 }
 
+.help-button {
+	background-color: #ff8072;
+}
+
 .help-button:hover {
 	background-color: #e57366;
+}
+
+.answer-button {
+	background-color: #088da5;
+}
+
+.answer-button:hover {
+	background-color: #077e94;
 }
 
 .speaker, .tatoeba {
 	font-weight: bold;
 }
 
-.kanji {
-	cursor: pointer;
-	position: relative;
-	color: #088da5;
+.furigana {
+	color: #999;
+	font-size: 0.8em;
 }
 
-.kanji:hover {
-	font-weight: bold;
+.kotae-list {
+	margin-bottom: 24px;
 }
 
-.list {
+.kotae {
 	margin: 0 4px;
 	padding: 1px 6px;
 	border-radius: 4px;
-	border: 1px solid #03042b;
+	border: 1px solid #1c1c49;
 	background-color: #e1e1d8;
 	white-space: nowrap;
+	cursor: pointer;
+}
+
+.kotae.active {
+	background-color: #088da5;
+	color: #fbfaf1;
+}
+
+.kanji-kotae {
+	width: 100px;
+	display: inline-block;
+}
+
+input {
+	border-radius: 3px;
+	border: 1px solid #ff8072;
+	height: 20px;
+}
+
+input.valid {
+	border: 1px solid #088da5;
 }
 
 .vocab {

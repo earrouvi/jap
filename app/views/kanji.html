@@ -1,0 +1,35 @@
+<div class="container">
+	<h1>Kanji</h1>
+	<div class="content-text">
+		<h3>Exercice 1</h3>
+
+		<div>
+			<div ng-repeat="ex in kotae1">
+				<div class="kanji-kotae">{{ ex.kanji }}</div>
+				<input type="text" ng-model="answers1[$index]" ng-class="{ valid: answers1[$index] == ex.kana }" />
+			</div>
+		</div>
+	</div>
+
+	<div class="content-text">
+		<h3>Exercice 2</h3>
+
+		<div>
+			<div ng-repeat="ex in kotae2">
+				<div class="kanji-kotae">{{ ex.kanji }}</div>
+				<input type="text" ng-model="answers2[$index]" ng-class="{ valid: answers2[$index] == ex.kana }" />
+			</div>
+		</div>
+	</div>
+
+	<div class="content-text">
+		<h3>Exercice 3</h3>
+
+		<div>
+			<div ng-repeat="ex in kotae3">
+				<div class="kanji-kotae">{{ ex.kanji }}</div>
+				<input type="text" ng-model="answers3[$index]" ng-class="{ valid: answers3[$index] == ex.kana }" />
+			</div>
+		</div>
+	</div>
+</div>
